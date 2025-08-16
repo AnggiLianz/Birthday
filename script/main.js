@@ -91,7 +91,7 @@ const animationTimeline = () => {
     opacity: 0,
     y: 10
     })
-    .from(".gif", 0.7, {
+    .from(".gif-container", 0.7, {
         opacity: 0,
         y: 10
     }, "-=0.7") 
@@ -99,7 +99,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10
     }, "+=3")
-    .to(".gif", 0.7, {
+    .to(".gif-container", 0.7, {
         opacity: 0,
         y: 10
     }, "-=0.7") 
@@ -144,7 +144,7 @@ const animationTimeline = () => {
     })
     .to(".idea-3 .happy", 1, { 
         opacity: 1,
-        y: -20,
+        scale: 1,
     }, "-=1.5")
     .to(".idea-3", 0.2, ideaTextTransLeave, "+=1.5")
     .to(".idea-3", 0.2, ideaTextTransLeave, "+=1.5")
@@ -221,6 +221,12 @@ const animationTimeline = () => {
         },
         "-=2"
     )
+    .from(".hat", 0.5, {
+        x: -100,
+        y: 350,
+        rotation: -180,
+        opacity: 0,
+    })
     .staggerFrom(
         ".wish-hbd span",
         0.7, {

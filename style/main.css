@@ -70,13 +70,13 @@ body.dark-mode {
   font-size: 3rem;
 }
 
-.gif {
+.gif-container {
   display: flex;
   justify-content: center; 
   margin-top: 250px;        
 }
 
-.gif img {
+.gif-container img {
   max-width: auto; 
   height: auto;
 }
@@ -123,15 +123,12 @@ body.dark-mode {
 }
 
 .happy {
-  display: flex;
-  justify-content: center; 
-  margin-top: 20px;        
-}
-
-.happy img {
-  max-width: auto; 
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
   height: auto;
 }
+
 
 .five .idea-5 {
   font-size: 4rem;
@@ -142,20 +139,15 @@ body.dark-mode {
 }
 
 .hug {
-  display: flex;
-  justify-content: center; 
-  margin-top: 10px;        
-}
-
-.hug img {
-  max-width: 200px; 
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
   height: auto;
 }
 
 .idea-6 span{
   font-size: 15rem;
 }
-
 
 .six {
   position: relative;
@@ -170,13 +162,14 @@ body.dark-mode {
   /* height: auto; */
 }
 
-.six {
-  /*left: 41.5%;*/
+.six .hat {
+  left: 41.5%;
   position: absolute;
   /* transform: scale(0.1); */
   top: -35%;
   width: 80px;
 }
+
 
 .baloons img {
   display: inline-block;
@@ -288,6 +281,30 @@ body.dark-mode {
 }
 
 /* Media Queries */
+@media screen and (max-height: 1000px) {
+  .six .hat {
+    left: 40%;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .six .hat {
+    left: 37%;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .six .hat {
+    left: 32%;
+  }
+}
+
+@media screen and (max-height: 850px) and (max-width: 450px) {
+  .six .hat {
+    left: 32%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .container {
     width: 90%;
